@@ -11,7 +11,7 @@
 - [Contact the Developers](#contact)
 - [Future Development](#development)
 - [Contributing](#contributing)
-- [Acknowledgment](#acknowledgment)
+- [Acknowledgments](#acknowledgments)
 - [License](#license)
 - [Project Status](#status)
 
@@ -78,9 +78,9 @@ If you have contributions you would like to make, please follow these guidelines
 
 5. **Submit a Pull Request**: Navigate to the original repository and submit a pull request with a description of your changes.
 
-<a id="acknowledgment"></a>
-## Acknowledgment
-FILL
+<a id="acknowledgments"></a>
+## Acknowledgments
+This code was initially written by edX Bootcamp and modified by me.
 
 <a id="license"></a>
 ## License
