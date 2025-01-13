@@ -1,96 +1,135 @@
-<a id="title"></a>
-# Google Books
+# [Google Books](https://LINK)
+
+## Description
+Google Books is a full-stack MERN application that lets users search for books through the Google Books API and save their favorite titles to a custom list. With account creation and login functionality, users can easily manage their saved books. The application utilizes GraphQL for streamlined and efficient API queries and mutations.
 
 ## Table of Contents
-- [Title](#title)
-- [Description](#description)
-- [Badges and Resources Used](#badges)
-- [Visuals](#visuals)
-- [Usage](#usage)
-- [Tests](#tests)
-- [Contact the Developers](#contact)
-- [Future Development](#development)
-- [Contributing](#contributing)
-- [Acknowledgments](#acknowledgments)
-- [License](#license)
-- [Project Status](#status)
+1. [Description](#description)
+2. [Table of Contents](#table-of-contents)
+3. [Usage](#usage)
+4. [Installation](#installation)
+5. [Demonstration](#demonstration)
+6. [Technologies Employed](#technologies-employed)
+7. [Future Development](#future-development)
+8. [Contributing](#contributing)
+9. [Credits](#credits)
+10. [Tests](#tests)
+11. [Questions](#questions)
+12. [License](#license)
 
-<a id="description"></a>
-## Description
-Your assignment this week is emblematic of the fact that most modern websites are driven by two things: data and user demands. This shouldn't come as a surprise, as the ability to personalize user data is the cornerstone of real-world web development today. And as user demands evolve, applications need to be more performant.
-
-This week, you’ll take starter code with a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server. The app was built using the MERN stack with a React front end, MongoDB database, and Node.js/Express.js server and API. It's already set up to allow users to save book searches to the back end.
-
-**Features**
-
-**KEY USES:**
-1. **1:**
-
-**CORE FUNCTIONS:**
-1. **1:**
-
-<a id="badges"></a>
-## Badges, API's, and Resources Used
-
-### License
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-<a id="usage"></a>
 ## Usage
-Website is deployed at [FILL LINK]
+   **Features**
+   - JWT user authentication
+   - Save and manage books
+   - Google books API for book search
+   - Design using Bootstrap
 
-<a id="Visuals"></a>
-## Visuals
-FILL
+   **User Story:**
+   ```md
+   AS AN avid reader
+   I WANT to search for new books to read
+   SO THAT I can keep a list of books to purchase
+   ```
 
-<a id="tests"></a>
-## Tests
-FILL
+   **Acceptance Criteria:**
+   ```md
+   GIVEN a book search engine
+   WHEN I load the search engine
+   THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button
+   WHEN I click on the Search for Books menu option
+   THEN I am presented with an input field to search for books and a submit button
+   WHEN I am not logged in and enter a search term in the input field and click the submit button
+   THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site
+   WHEN I click on the Login/Signup menu option
+   THEN a modal appears on the screen with a toggle between the option to log in or sign up
+   WHEN the toggle is set to Signup
+   THEN I am presented with three inputs for a username, an email address, and a password, and a signup button
+   WHEN the toggle is set to Login
+   THEN I am presented with two inputs for an email address and a password and login button
+   WHEN I enter a valid email address and create a password and click on the signup button
+   THEN my user account is created and I am logged in to the site
+   WHEN I enter my account’s email address and password and click on the login button
+   THEN I the modal closes and I am logged in to the site
+   WHEN I am logged in to the site
+   THEN the menu options change to Search for Books, an option to see my saved books, and Logout
+   WHEN I am logged in and enter a search term in the input field and click the submit button
+   THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account
+   WHEN I click on the Save button on a book
+   THEN that book’s information is saved to my account
+   WHEN I click on the option to see my saved books
+   THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account
+   WHEN I click on the Remove button on a book
+   THEN that book is deleted from my saved books list
+   WHEN I click on the Logout button
+   THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
+   ```
 
-<a id="contact"></a>
-## Contact
-If you have any questions about the contents please feel free to reach out at:
+## Installation
+This application is deployed using [Render](https:FILL).
 
-Skylar Kline
- - Email: [skylarkline16@gmail.com](mailto:skylarkline16@gmail.com)
- - GitHub: [skylark-shae](https://github.com/skylark-shae)
+## Demonstration
+<div style="margin-left: 40px;">
+  Demonstration of the application's desktop interface:<br/>
+  <img src=".gif" alt="Desktop demonstration video" width="550"/>
+</div>
+<br/>
 
-<a id="development"></a>
+<div style="margin-left: 40px;">
+  Image of the application's desktop interface:<br/>
+  <img src=".png" alt="Screenshot" width="550"/>
+</div>
+<br/>
+
+## Technologies Employed
+**Frontend:**   
+   ![React](https://img.shields.io/badge/-React-20232A?logo=react&logoColor=61DAFB)
+   ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)  
+   ![Apollo Client](https://img.shields.io/badge/-Apollo%20Client-311C87?logo=apollographql&logoColor=white)
+   ![React Bootstrap](https://img.shields.io/badge/-React%20Bootstrap-563D7C?logo=bootstrap&logoColor=white)
+
+**Backend:**  
+   ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
+   ![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white)
+   ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)  
+   ![Mongoose](https://img.shields.io/badge/-Mongoose-880000?logo=mongodb&logoColor=white)
+   ![Apollo Server](https://img.shields.io/badge/-Apollo%20Server-311C87?logo=apollographql&logoColor=white)
+   ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?logo=graphql&logoColor=white)
+
+
+**Authentication:**  
+   ![JSON Web Tokens](https://img.shields.io/badge/-JSON%20Web%20Tokens-000000?logo=jsonwebtokens&logoColor=white)
+
+**Build:**  
+   ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white)
+   ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
+
 ## Future Development
+I do not plan to make any further developments on this project outside of using it as a learning and rescoure model.
 
-<a id="contributing"></a>
-## Contributions
-If you have contributions you would like to make, please follow these guidelines.
+## Contributing
+Contributions are welcome and encouraged. To do so:
+- Fork this repository. 
+- Your pull request will need approval in order to merge to ```main```.
+- Take a look at the [Future Development](#future-development) section to see what I am currently working on.
 
-1. **Fork the Repository**: Click "Fork" on the top right corner of the repository page on GitHub.
+## Credits
+This code was written as an excersice by edX coding bootcamp and modified to function by me.
 
-2. **Make Your Changes**: Implement your changes and commit them with a clear message:
-   ```bash
-   git checkout -b feature/YourFeature
+## Tests
+No tests needed beyond visiting website.
 
-3. **Make Your Changes**: Implement your changes and commit them with a clear message:
-   ```bash
-   git commit -m "Add your feature description"
+## Questions
+If you have any questions, please reach out to me at:
+- Email: [skylarkline16@gmail.com](mailto:skylarkline16@gmail.com)
+- GitHub: [skylark-shae](https://github.com/skylark-shae)
 
-4. **Push to Your Fork**: Push your changes to your forked repository:
-   ```bash
-   git push origin feature/YourFeature
-
-5. **Submit a Pull Request**: Navigate to the original repository and submit a pull request with a description of your changes.
-
-<a id="acknowledgments"></a>
-## Acknowledgments
-This code was initially written by edX Bootcamp and modified by me.
-
-<a id="license"></a>
 ## License
-MIT License © 2024 Skylark
-Please refer to this link, [License: MIT](https://opensource.org/licenses/MIT) for more information.
 
-  ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)  
+This project is licensed under the MIT license.
 
-<a id="status"></a>
-## Project Status
-In progress
+The MIT License is a permissive software license originating at the Massachusetts Institute of Technology (MIT)[6] in the late 1980s.[7] As a permissive license, it puts very few restrictions on reuse and therefore has high license compatibility.
 
-[back to top](#title)
+For more information visit [MIT Licensing](https://choosealicense.com/licenses/mit/).
+
+- - -
+© 2025 Sky-Shae Design. All Rights Reserved.
