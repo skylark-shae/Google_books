@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const secret = process.env.JWT_SECRET_KEY;
+const secret = process.env.JWT_SECRET_KEY || 'your_secret_key';
 const expiration = '1h';
 
 export class AuthenticationError extends Error {
